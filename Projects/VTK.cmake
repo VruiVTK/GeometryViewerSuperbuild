@@ -18,6 +18,7 @@ ExternalProject_Add(
   STAMP_DIR "${VTK_ROOT}/stamp"
   GIT_REPOSITORY "https://github.com/sankhesh/VTK.git"
   GIT_TAG "Rendering_External_Module"
+  UPDATE_COMMAND ${GIT_EXECUTABLE} pull
   SOURCE_DIR "${VTK_ROOT}/src"
   BINARY_DIR "${VTK_ROOT}/bld"
   CMAKE_ARGS "${VTK_CMAKE_ARGS}"
