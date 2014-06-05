@@ -23,5 +23,8 @@ INCLUDE (VRUI)
 # Build VTK
 INCLUDE (VTK)
 
+# Build TCLAP
+INCLUDE (TCLAP)
+
 # Build VruiVTK
 INCLUDE (VruiVTK)

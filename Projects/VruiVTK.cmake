@@ -7,11 +7,12 @@ SET(VruiVTK_ROOT
 SET(VruiVTK_CMAKE_ARGS
   -DVRUI_PKGCONFIG:PATH=${VRUI_ROOT}/pkgconfig
   -DVTK_DIR:PATH=${VTK_ROOT}/bld
+  -DTCLAP_INCLUDE_DIR:PATH=${TCLAP_ROOT}/bld/include
   )
 
 ExternalProject_Add(
   VruiVTK
-  DEPENDS VRUI VTK
+  DEPENDS VRUI VTK TCLAP
   PREFIX "${VruiVTK_ROOT}"
   STAMP_DIR "${VruiVTK_ROOT}/stamp"
   GIT_REPOSITORY "https://github.com/VruiVTK/VruiVTK.git"
