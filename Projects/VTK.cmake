@@ -5,11 +5,13 @@ SET(VTK_ROOT
   CACHE INTERNAL ""
   )
 
+# NOTE: For now we only support Mac and Windows.
 SET (VTK_CMAKE_ARGS
   -DBUILD_TESTING:BOOL=OFF
   -DBUILD_SHARED_LIBS:BOOL=OFF
   -DBUILD_EXAMPLES:BOOL=OFF
   -DModule_vtkRenderingExternal:BOOL=ON
+  -DVTK_USE_X:BOOL=ON
   )
 
 ExternalProject_Add(
