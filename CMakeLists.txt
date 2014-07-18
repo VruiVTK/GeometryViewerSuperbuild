@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED (VERSION 2.8)
 
-PROJECT (VruiVTKSuperbuild)
+PROJECT (GeometryViewerSuperbuild)
 
 SET (CMAKE_MODULE_PATH
   "${CMAKE_CURRENT_SOURCE_DIR}/Projects"
@@ -23,5 +23,5 @@ INCLUDE (VRUI)
 # Build VTK
 INCLUDE (VTK)
 
-# Build VruiVTK
-INCLUDE (VruiVTK)
+# Build GeometryViewer
+INCLUDE (GeometryViewer)
